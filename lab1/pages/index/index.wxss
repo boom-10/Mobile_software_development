@@ -1,0 +1,20 @@
+image{
+    width: 200px;
+    height: 200px;
+    margin-top: 20px;
+}
+text{
+    display: block;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    font-size: 18px;
+}
+view{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+button{
+    width: 300px!important;
+}
