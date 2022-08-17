@@ -1,0 +1,42 @@
+picker{
+  margin: 0 auto;
+  text-align: center;
+}
+picker text{
+  font-size: 30px;
+}
+picker :nth-child(2){
+  margin: 0 10px;
+}
+page{
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content:space-around;
+  align-items: center;
+}
+.textContainer{
+  font-size: 25px;
+  text-align: center;
+}
+image{
+  width: 200px;
+  margin: 0 auto;
+}
+.textContainer text{
+  margin-left: 10px;
+}
+.infoContainer{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content:space-around;
+}
+.infoContainer view{
+  flex: 33%;
+  display: flex;
+  font-size: 20px;
+  line-height: 45px;
+  text-align: center;
+  flex-direction: column;
+}

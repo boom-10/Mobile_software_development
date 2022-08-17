@@ -1,0 +1,16 @@
+<!-- <view class="container"> -->
+  <picker mode="region" bindchange='regionChange'>
+    <text wx:for="{{region}}">{{item}}</text>
+  </picker>
+  <view class="textContainer">
+    <text>{{temp}}℃</text>
+    <text>{{weather}}</text>
+  </view>
+  <image src="/node_modules/qweather-icons/icons/{{imgsrc}}.svg" mode="widthFix"></image>
+  <view class="infoContainer">
+    <view wx:for="{{nowInfo}}">
+      <text>{{item.name}}</text> 
+      <text>{{item.num}}</text>
+    </view>
+  </view>
+<!-- </view> -->
