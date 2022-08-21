@@ -1,0 +1,24 @@
+/* pages/detail/detail.wxss */
+image{
+    width: 700rpx;
+    margin-left: 13px;
+}
+view{
+    padding-left: 10px;
+    margin: 5px 0px;
+}
+.title{
+    padding-left: 10px;
+    font-size: 20px;
+    font-weight: 600;
+}
+.content{
+    padding-left: 10px;
+}
+.date{
+    margin-left: 550rpx;
+}
+.is_like{
+    background-color: skyblue;
+    color: white;
+}

@@ -1,0 +1,53 @@
+/*新闻列表区域样式*/
+/*2-1新闻列表容器*/
+#news-list {
+  min-height: 600rpx;
+  padding: 15rpx;
+}
+swiper-item image{
+width: 100%;
+}
+/*2-2列表项目*/
+.list-item{
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1rpx solid gray;
+}
+/*2-3新闻图片*/
+.list-item image{
+  width:230rpx;
+  height: 150rpx;
+  margin: 10rpx;
+}
+/*2-4新闻标题*/
+.list-item text{
+  width: 100%;
+  line-height: 60rpx;
+  font-size: 10pt;
+}
+.news_list{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 7px;
+  border-radius: 20px;
+  background-color: #efefef;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+.news_list image{
+  width: 150px;
+}
+.text_container title{
+  height: 600rpx;
+}
+.text_container{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 10px;
+}
+.time{
+  margin-left: 220rpx;
+}

@@ -1,0 +1,49 @@
+/* pages/my/my.wxss */
+.info_container{
+    background-color: #328eeb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 18px;
+    height: 200px;
+}
+.info_container image{
+    width: 100px;
+    border-radius: 10px;
+}
+.nickname{
+    margin: 10px;
+}
+.news_list{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 7px;
+    border-radius: 20px;
+    background-color: #efefef;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+.news_list image{
+    width: 150px;
+}
+.text_container title{
+    height: 600rpx;
+}
+.text_container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 10px;
+}
+.time{
+    margin-left: 220rpx;
+}
+.like{
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 15px;
+    margin-top: 10px;
+}
