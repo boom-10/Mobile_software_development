@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "my_close":"/component/close",
+    "my_open":"/component/open/open"
+  }
+}

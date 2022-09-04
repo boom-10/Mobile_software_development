@@ -1,0 +1,20 @@
+<!--component/close.wxml-->
+<van-empty description="一个待拆开的胶囊都没有哦" wx:if="{{close.list_item.length==0}}" />
+<view class="contont">
+    <view class="list_con">
+        <view class="list_item" wx:for="{{close.list_item}}" data-item="{{item}}"  >
+            <van-swipe-cell right-width="{{ 65 }}">
+                <van-cell-group  bindtap="console">
+                    <van-circle bindinput="bindinput" value="{{item.num}}" :rate="30" :speed="100" text="{{item.dif}}" />
+                    <view class="text_con">
+                        <view class="title">{{item.title}}</view>
+                        <view class="start">写信：{{item.start}}</view>
+                        <view class="end">拆信：{{item.end}}</view>
+                    </view>
+                </van-cell-group>
+                <view slot="right" class="btn_con"><button bindtap="del" data-item="{{item}}">删除</button></view>
+            </van-swipe-cell>
+        </view>
+    </view>
+</view>
+<van-notify id="van-notify" />

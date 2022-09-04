@@ -1,0 +1,4 @@
+<!--pages/info/info.wxml-->
+<view class="title">{{item.title}}</view>
+<view class="context">{{item.context}}</view>
+<view class="time">{{item.start}}</view>

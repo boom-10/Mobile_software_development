@@ -1,0 +1,55 @@
+
+  <van-cell-group class="top" inset>
+  <van-field
+    value="{{currentChoose}}"
+    label="开启时间"
+    left-icon="smile-o"
+    placeholder="时间"
+    bindtap="openPicker"
+    rules="[{ required: true, message: '请填写用户名' }]"
+  />
+  <van-field
+    required
+    value="{{value2}}"
+    bindinput="bindKeyInput"
+    clearable
+    label="主题"
+    left-icon="music-o"
+    placeholder="请输入这封信的主题哦"
+    rules="[{ required: true, message: '请填写用户名' }]"
+  />
+</van-cell-group>
+<view class="text_con">
+  <van-cell-group style="margin-top: 10px!important;" inset>
+  <van-field
+    value="{{text_val}}"
+    v-model="message"
+    bindinput="bindTextInput"
+    rows="10"
+    autosize
+    type="textarea"
+    maxlength="10000"
+    placeholder="请输入留言"
+    show-word-limit
+  />
+</van-cell-group>
+</view>
+<view class='load-img'>
+    <view class='load-box'>
+      <view class='img-item' wx:for="{{fileList}}" wx:key="index" >
+        <image src="{{item.path}}" data-src="{{item}}" mode="aspectFill" data-list="{{fileList}}" bindtap=""></image>
+        <icon class='icon' type="clear" size="20" color='#EF4444' catchtap='_onDelTab' data-idx="{{index}}" wx:if="{{!prevent}}"/>
+      </view>
+      <image class='img-add' bindtap='_addImg' wx:if="{{!prevent}}"></image>
+    </view>
+</view>
+
+<view class="btn">
+  <button bindtap="submitFun">提交</button>
+</view>
+<van-notify  id="van-notify" />
+
+<van-action-sheet show="{{ show }}" bind:close="onClose" bind:getuserinfo="onGetUserInfo" >
+  <van-datetime-picker  type="datetime" value="{{ currentDate }}" min-date="{{ minDate }}" max-date="{{ maxDate }}" bind:cancel="onCancel"
+    bind:confirm="onConfirm"  bind:change="onChange" />
+</van-action-sheet>

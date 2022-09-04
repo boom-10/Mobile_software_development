@@ -1,0 +1,11 @@
+<view class="top">
+  <vant-icon name="underway-o"  style="color: {{color1}};" size="30"    data-id="1" bindtap="change" />
+  <vant-icon name="smile-o"  color="{{color2}}" data-id="0" bindtap="change" size="30"/>
+  <view class="line" style="left: {{close_open ? widwidth-45:widwidth+5}}px;"></view>
+</view>
+<my_close wx:if="{{close_open}}" close="{{close}}"></my_close>
+<my_open wx:else="{{close_open}}" close="{{openlist}}" empty="{{empty}}" ></my_open>
+<view class="plus_container" animation="{{ani}}" bindtap="gotoWrite" style="{{!c_rotate?' ': rotate_style}}">
+  <vant-icon  name="plus"  size="40" color="#1989fa" class="plus"/>
+</view>
+<van-notify  id="van-notify" />

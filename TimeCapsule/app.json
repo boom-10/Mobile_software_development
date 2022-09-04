@@ -1,0 +1,29 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/person/person",
+    "pages/write/write",
+    "pages/info/info"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "HeyKong",
+    "navigationBarTextStyle":"black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "usingComponents": {
+    "vant-button":"@vant/weapp/button/index",
+    "vant-icon":"@vant/weapp/icon/index",
+    "van-empty":"@vant/weapp/empty/index",
+    "van-circle":"@vant/weapp/circle/index",
+    "van-datetime-picker":"@vant/weapp/datetime-picker/index",
+    "van-action-sheet": "@vant/weapp/action-sheet/index",
+    "van-cell-group":"@vant/weapp/cell-group/index",
+    "van-field":"@vant/weapp/field/index",
+    "van-uploader":"@vant/weapp/uploader/index",
+    "van-notify": "/miniprogram_npm/@vant/weapp/notify/index",
+    "van-swipe-cell":"@vant/weapp/swipe-cell/index",
+    "van-cell":"@vant/weapp/cell/index"
+  }
+}
